@@ -16,6 +16,6 @@
         public string sClientType { get; set; }
         public string Mobile_Number { get; set; }
         public string sClientApp_url { get; set; }
-        public bool chkTempData { get; set; }
+       public string chkTempData { get; set; }
     }
 }
