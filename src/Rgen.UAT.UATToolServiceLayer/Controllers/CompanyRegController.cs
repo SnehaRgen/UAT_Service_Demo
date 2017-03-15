@@ -60,6 +60,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                     cmd.Parameters.Add(new SqlParameter("@sClient_AdminEmailID", SqlDbType.VarChar, 500) { Value = _reg.sClient_AdminEmailID });
                     cmd.Parameters.Add(new SqlParameter("@sClientType", SqlDbType.VarChar, 500) { Value = _reg.sClientType });
                     cmd.Parameters.Add(new SqlParameter("@Mobile_Number", SqlDbType.VarChar, 500) { Value = _reg.Mobile_Number });
+                    cmd.Parameters.Add(new SqlParameter("@chkTempData", SqlDbType.VarChar, 500) { Value = _reg.chkTempData });
                     cmd.Parameters.Add(new SqlParameter("@sClientApp_url", SqlDbType.VarChar, 500) { Value = _reg.sClientApp_url });
                     cmd.Parameters.Add(new SqlParameter("@StatementType", SqlDbType.VarChar, 500) { Value = "Insert" });
                     cmd.Parameters.Add(new SqlParameter("@SchemaName", SqlDbType.VarChar, 500) { Value = SchemaName });
