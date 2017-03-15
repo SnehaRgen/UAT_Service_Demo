@@ -64,7 +64,6 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                     cmd.Parameters.Add(new SqlParameter("@sClientApp_url", SqlDbType.VarChar, 500) { Value = _reg.sClientApp_url });
                     cmd.Parameters.Add(new SqlParameter("@StatementType", SqlDbType.VarChar, 500) { Value = "Insert" });
                     cmd.Parameters.Add(new SqlParameter("@SchemaName", SqlDbType.VarChar, 500) { Value = SchemaName });
-                    cmd.Parameters.Add(new SqlParameter("@chkTempData", SqlDbType.VarChar, 500) { Value = _reg.chkTempData });
                     cmd.Parameters.Add(new SqlParameter("@Ret_Parameter", SqlDbType.VarChar, 500) { Direction = ParameterDirection.Output });
                     if (cmd.Connection.State != ConnectionState.Open)
                         cmd.Connection.Open();
